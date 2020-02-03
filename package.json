@@ -1,0 +1,20 @@
+{
+  "name": "jest-mock-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:unmocked": "jest index_unmocked.test.js",
+    "test:mocked": "jest index_mocked.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2"
+  },
+  "devDependencies": {
+    "jest": "^25.1.0"
+  }
+}
