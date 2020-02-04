@@ -6,6 +6,6 @@ const throwUnmockedError = () => {
 
 // Make all axios methods return the unmocked error
 // List of axios methods taken from README at https://github.com/axios/axios
-axios.get = axios.post = axios.request = axios.get = axios.delete = axios.head = axios.options = axios.post = axios.put = axios.patch = throwUnmockedError;
+axios.post = axios.request = axios.get = axios.delete = axios.head = axios.options = axios.post = axios.put = axios.patch = throwUnmockedError;
 
 module.exports = axios;
