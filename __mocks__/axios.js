@@ -15,6 +15,5 @@ axios.options.mockImplementation(throwUnmockedError);
 axios.post.mockImplementation(throwUnmockedError);
 axios.put.mockImplementation(throwUnmockedError);
 axios.patch.mockImplementation(throwUnmockedError);
-throwUnmockedError;
 
 module.exports = axios;
