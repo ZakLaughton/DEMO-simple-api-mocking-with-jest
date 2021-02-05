@@ -1,8 +1,20 @@
-const axios = require('axios');
+/* 
+https://dev.to/zaklaughton/the-only-3-steps-you-need-to-mock-an-api-call-in-jest-39mb
+https://zetcode.com/javascript/axios/
+*/
+const axios = require("axios");
 
-async function getFirstAlbumTitle() {
-  const response = await axios.get('https://jsonplaceholder.typicode.com/albums');
-  return response.data[0].title;
+async function getAlbum(url) {
+  const response = await axios.get(url);
+  return response;
 }
 
-module.exports = getFirstAlbumTitle;
+async function postAlbum(url) {
+  const response = await axios.post(url);
+  return response;
+}
+
+module.exports = {
+  getAlbum: getAlbum,
+  postAlbum: postAlbum,
+};

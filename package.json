@@ -6,15 +6,17 @@
   "scripts": {
     "test": "jest",
     "test:unmocked": "jest index_unmocked.test.js",
-    "test:mocked": "jest index_mocked.test.js"
+    "test:mocked": "jest index_mocked.test.js",
+    "test:missingmock": "jest index_missing_mock.test.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.19.2"
+    "axios": "^0.21.1"
   },
   "devDependencies": {
-    "jest": "^25.1.0"
-  }
+    "jest": "^25.5.4"
+  },
+  "homepage": "https://github.com/ZakLaughton/simple-api-mocking-with-jest/tree/mock-with-failed-requests"
 }
